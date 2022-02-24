@@ -12340,11 +12340,33 @@ fieldset:disabled .btn {
           transform: translateY(-130px);
 }
 
+.hero__text {
+  max-width: 400px;
+}
+
 .eb-heading {
   font-size: 40px;
 }
 
 .footer__link {
   color: #f3f4f6;
+}
+
+@media (min-width: 768px) {
+  .footer__socials {
+    font-size: 30px !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .latest-articles__heading {
+    font-size: 20px !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .latest-articles__image {
+    min-height: 300px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

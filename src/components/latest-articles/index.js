@@ -5,7 +5,7 @@ function LatestArticles() {
     <section className="container-fluid bg-very-light-gray py-5">
       <h1 className="text-dark eb-heading text-center my-5">Latest Articles</h1>
 
-      <div className="row g-4">
+      <div className="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
         <Article
           author="Claire Robinson"
           img="/images/image-currency.jpg"

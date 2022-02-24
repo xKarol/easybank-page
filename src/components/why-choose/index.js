@@ -3,7 +3,7 @@ import Card from "./card";
 function WhyChoose() {
   return (
     <section className="bg-light-grayish-blue py-5">
-      <div className="container text-center">
+      <div className="container text-center text-md-start">
         <h2 className="eb-heading">Why choose Easybank?</h2>
         <p className="mt-3 mb-4 text-grayish-blue">
           We leverage Open Banking to turn your bank account into your financial
@@ -11,7 +11,7 @@ function WhyChoose() {
         </p>
         <div className="container">
           <div className="row">
-            <div className="col-12">
+            <div className="col-12 col-md-6 col-lg-3">
               <Card
                 heading={"Online Banking"}
                 text={
@@ -20,7 +20,7 @@ function WhyChoose() {
                 icon={"/images/icon-online.svg"}
               />
             </div>
-            <div className="col-12">
+            <div className="col-12 col-md-6 col-lg-3">
               <Card
                 heading={"Simple Budgeting"}
                 text={
@@ -29,7 +29,7 @@ function WhyChoose() {
                 icon={"/images/icon-budgeting.svg"}
               />
             </div>
-            <div className="col-12">
+            <div className="col-12 col-md-6 col-lg-3">
               <Card
                 heading={"Fast Onboarding"}
                 text={
@@ -38,7 +38,7 @@ function WhyChoose() {
                 icon={"/images/icon-onboarding.svg"}
               />
             </div>
-            <div className="col-12">
+            <div className="col-12 col-md-6 col-lg-3">
               <Card
                 heading={"Open API"}
                 text={

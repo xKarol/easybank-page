@@ -3,7 +3,7 @@ import SocialIcon from "./social-icon";
 
 function Socials() {
   return (
-    <section className="d-flex fs-1 my-4">
+    <section className="d-flex fs-1 my-4 footer__socials">
       <SocialIcon icon="facebook" href="/" />
       <SocialIcon icon="youtube" href="/" />
       <SocialIcon icon="twitter" href="/" />

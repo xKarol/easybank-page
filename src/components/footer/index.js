@@ -9,11 +9,11 @@ function Footer() {
     <footer className="bg-dark text-white py-4">
       <div className="container">
         <div className="row align-items-center">
-          <div className="col-12 d-flex flex-column align-items-center">
+          <div className="col-12 col-lg-4 d-flex flex-column align-items-center align-items-lg-start">
             <Logo light />
             <Socials />
           </div>
-          <div className="col-12 d-flex flex-column">
+          <div className="col-12 col-lg-4 d-flex flex-column justify-content-lg-between flex-lg-row">
             <Navbar>
               <NavbarItem href="/">About Us</NavbarItem>
               <NavbarItem href="/">Contact</NavbarItem>
@@ -25,7 +25,7 @@ function Footer() {
               <NavbarItem href="/">Privacy Policy</NavbarItem>
             </Navbar>
           </div>
-          <div className="col-12 d-flex flex-column align-items-center">
+          <div className="col-12 col-lg-4 d-flex flex-column align-items-center align-items-lg-end">
             <RequestInviteButton className="my-4" />
             <span className="text-grayish-blue">
               © Easybank. All Rights Reserved
