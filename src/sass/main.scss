@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap");
+
+//colors
+$primary: hsl(136, 65%, 51%);
+$secondary: hsl(192, 70%, 51%);
+$dark: hsl(233, 26%, 24%);
+
+@import "../../node_modules/bootstrap/scss/_functions";
+@import "../../node_modules/bootstrap/scss/_variables";
+
+$custom-theme-colors: (
+  "grayish-blue": hsl(233, 8%, 62%),
+  "light-grayish-blue": hsl(220, 16%, 96%),
+  "very-light-gray": hsl(0, 0%, 98%),
+);
+
+$theme-colors: map-merge($custom-theme-colors, $theme-colors);
+
+@each $key, $val in $custom-theme-colors {
+  .bg-#{$key} {
+    background-color: $val;
+  }
+  .text-#{$key} {
+    color: $val;
+  }
+}
+
+//fonts
+$font-family-base: "'Public Sans', sans-serif";
+$font-size-base: 18px;
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
