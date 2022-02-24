@@ -18,11 +18,6 @@ function App() {
 
 export default App;
 
-// Home
-// About
-// Contact
-// Blog
-// Careers
 
 // Request Invite
 

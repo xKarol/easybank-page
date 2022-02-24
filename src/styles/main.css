@@ -12323,4 +12323,10 @@ fieldset:disabled .btn {
     display: none !important;
   }
 }
+
+.header__button {
+  background: #31d35c;
+  background: -webkit-gradient(linear, left top, right top, color-stop(10%, #31d35c), to(#2bb7da));
+  background: linear-gradient(90deg, #31d35c 10%, #2bb7da 100%);
+}
 /*# sourceMappingURL=main.css.map */
