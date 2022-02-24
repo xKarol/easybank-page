@@ -19,3 +19,9 @@
 .eb-heading {
   font-size: 40px;
 }
+
+.footer {
+  &__link {
+    color: $lightGrayishBlue;
+  }
+}

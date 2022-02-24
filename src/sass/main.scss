@@ -1,17 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
 
 //colors
 $primary: hsl(136, 65%, 51%);
 $secondary: hsl(192, 70%, 51%);
 $dark: hsl(233, 26%, 24%);
-
+$grayishBlue: hsl(233, 8%, 62%);
+$lightGrayishBlue:hsl(220, 16%, 96%);
+$veryLightGray: hsl(0, 0%, 98%);
 @import "../../node_modules/bootstrap/scss/_functions";
 @import "../../node_modules/bootstrap/scss/_variables";
 
 $custom-theme-colors: (
-  "grayish-blue": hsl(233, 8%, 62%),
-  "light-grayish-blue": hsl(220, 16%, 96%),
-  "very-light-gray": hsl(0, 0%, 98%),
+  "grayish-blue": $grayishBlue,
+  "light-grayish-blue": $lightGrayishBlue,
+  "very-light-gray": $veryLightGray,
 );
 
 $theme-colors: map-merge($custom-theme-colors, $theme-colors);
