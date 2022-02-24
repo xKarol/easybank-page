@@ -13,11 +13,11 @@ function Hero() {
           />
         </div>
         <div className="col-12">
-          <div className="container d-flex flex-column align-items-center mb-5">
-            <h1 className="text-dark text-center hero__heading">
+          <div className="container d-flex flex-column align-items-center mb-5 text-center">
+            <h1 className="text-dark eb-heading">
               Next generation digital banking
             </h1>
-            <p className="text-center mt-3 text-grayish-blue">
+            <p className="mt-3 text-grayish-blue">
               Take your financial life online. Your Easybank account will be a
               one-stop-shop for spending, saving, budgeting, investing, and much
               more.
