@@ -19,15 +19,6 @@ function App() {
 export default App;
 
 
-// Request Invite
-
-// Next generation digital banking
-
-// Take your financial life online. Your Easybank account will be a one-stop-shop
-// for spending, saving, budgeting, investing, and much more.
-
-// Request Invite
-
 // Why choose Easybank?
 
 // We leverage Open Banking to turn your bank account into your financial hub. Control

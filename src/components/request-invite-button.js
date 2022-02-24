@@ -1,9 +1,7 @@
-import React from "react";
-
 function RequestInviteButton({ className }) {
   return (
     <button
-      className={`btn text-white px-4 rounded-pill d-none d-lg-block border-0 ${className}`}
+      className={`request-invite-button btn text-white px-4 py-2 rounded-pill border-0 ${className}`}
     >
       Request Invite
     </button>

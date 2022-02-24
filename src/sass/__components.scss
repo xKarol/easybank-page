@@ -1,10 +1,20 @@
-.header {
-  &__button {
-    background: rgb(49, 211, 92);
+.request-invite-button{
+background: rgb(49, 211, 92);
     background: linear-gradient(
       90deg,
       rgba(49, 211, 92, 1) 10%,
       rgba(43, 183, 218, 1) 100%
     );
-  }
+}
+
+.hero {
+    &__images{
+        height: 350px;
+        &__main{
+            transform: translateY(-130px);
+        }
+    }
+    &__heading{
+        font-size: 40px;
+    }
 }

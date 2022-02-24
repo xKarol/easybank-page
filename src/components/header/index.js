@@ -5,12 +5,12 @@ import Navbar from "./navbar";
 
 function Header() {
   return (
-    <header className="bg-very-light-gray">
+    <header className="bg-white">
       <nav className="container navbar navbar-expand-lg navbar-light">
         <Logo className="navbar-brand" />
         <Hamburger />
         <Navbar />
-        <RequestInviteButton className="header__button" />
+        <RequestInviteButton className="d-none d-lg-block" />
       </nav>
     </header>
   );

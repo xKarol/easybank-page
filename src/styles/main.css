@@ -12324,9 +12324,22 @@ fieldset:disabled .btn {
   }
 }
 
-.header__button {
+.request-invite-button {
   background: #31d35c;
   background: -webkit-gradient(linear, left top, right top, color-stop(10%, #31d35c), to(#2bb7da));
   background: linear-gradient(90deg, #31d35c 10%, #2bb7da 100%);
+}
+
+.hero__images {
+  height: 350px;
+}
+
+.hero__images__main {
+  -webkit-transform: translateY(-130px);
+          transform: translateY(-130px);
+}
+
+.hero__heading {
+  font-size: 40px;
 }
 /*# sourceMappingURL=main.css.map */
