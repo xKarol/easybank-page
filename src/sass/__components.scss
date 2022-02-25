@@ -46,23 +46,60 @@
 }
 
 .header__navbar {
-  > li {
-    position: relative;
-    &:hover {
-      &:before {
-        opacity: 1;
+  &.collapsing {
+    transition: none;
+    display: none;
+  }
+  @include media-breakpoint-down(lg) {
+    &.show {
+      position: fixed;
+      top: 70px;
+      left: $grid-gutter-width;
+      right: $grid-gutter-width;
+      @include media-breakpoint-up(md) {
+        left: 20vw;
+        right: 20vw;
+      }
+      z-index: $zindex-dropdown;
+      &::before {
+        content: "";
+        position: fixed;
+        top: 54px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+        background: rgba(0, 0, 0, 50%);
+        background: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0.75) 10%,
+          rgba(0, 0, 0, 0.5) 100%
+        );
       }
     }
-    &:before {
-      content: "";
-      position: absolute;
-      left: 0;
-      right: 0;
-      bottom: -8px;
-      height: 3px;
-      @include primary-gradient;
-      opacity: 0;
-      transition: opacity 300ms ease-in-out;
+  }
+
+  &__list {
+    align-items: center;
+    background: $white;
+    > li {
+      position: relative;
+      &:hover {
+        &:before {
+          opacity: 1;
+        }
+      }
+      &:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -8px;
+        height: 3px;
+        @include primary-gradient;
+        opacity: 0;
+        transition: opacity 300ms ease-in-out;
+      }
     }
   }
 }

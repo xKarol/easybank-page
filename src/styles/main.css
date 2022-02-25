@@ -12378,15 +12378,60 @@ fieldset:disabled .btn {
   max-width: 400px;
 }
 
-.header__navbar > li {
+.header__navbar.collapsing {
+  -webkit-transition: none;
+  transition: none;
+  display: none;
+}
+
+@media (max-width: 991.98px) {
+  .header__navbar.show {
+    position: fixed;
+    top: 70px;
+    left: 1.5rem;
+    right: 1.5rem;
+    z-index: 1000;
+  }
+}
+
+@media (max-width: 991.98px) and (min-width: 768px) {
+  .header__navbar.show {
+    left: 20vw;
+    right: 20vw;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .header__navbar.show::before {
+    content: "";
+    position: fixed;
+    top: 54px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background: black;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, rgba(0, 0, 0, 0.75)), to(rgba(0, 0, 0, 0.5)));
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.75) 10%, rgba(0, 0, 0, 0.5) 100%);
+  }
+}
+
+.header__navbar__list {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #fff;
+}
+
+.header__navbar__list > li {
   position: relative;
 }
 
-.header__navbar > li:hover:before {
+.header__navbar__list > li:hover:before {
   opacity: 1;
 }
 
-.header__navbar > li:before {
+.header__navbar__list > li:before {
   content: "";
   position: absolute;
   left: 0;

@@ -5,13 +5,13 @@ import Navbar from "./navbar";
 
 function Header() {
   return (
-    <header className="bg-white">
-      <nav className="container navbar navbar-expand-lg navbar-light">
-        <Logo className="navbar-brand" />
+    <header class="navbar navbar-expand-lg navbar-light bg-white">
+      <div class="container">
+        <Logo />
         <Hamburger />
         <Navbar />
         <RequestInviteButton className="d-none d-lg-block" />
-      </nav>
+      </div>
     </header>
   );
 }
