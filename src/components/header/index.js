@@ -5,8 +5,8 @@ import Navbar from "./navbar";
 
 function Header() {
   return (
-    <header class="navbar navbar-expand-lg navbar-light bg-white">
-      <div class="container">
+    <header className="navbar navbar-expand-lg navbar-light bg-white">
+      <div className="container">
         <Logo />
         <Hamburger />
         <Navbar />

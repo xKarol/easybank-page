@@ -12396,20 +12396,12 @@ fieldset:disabled .btn {
   .header__navbar.show {
     position: fixed;
     top: 70px;
-    left: 1.5rem;
-    right: 1.5rem;
+    left: 0;
+    right: 0;
+    width: calc(100% - 20px);
+    max-width: 500px;
     z-index: 1000;
   }
-}
-
-@media (max-width: 991.98px) and (min-width: 768px) {
-  .header__navbar.show {
-    left: 20vw;
-    right: 20vw;
-  }
-}
-
-@media (max-width: 991.98px) {
   .header__navbar.show::before {
     content: "";
     position: fixed;
