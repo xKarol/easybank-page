@@ -3,17 +3,17 @@ import RequestInviteButton from "../request-invite-button";
 
 function Hero() {
   return (
-    <section className="container-fluid bg-very-light-gray">
+    <section className="container-fluid bg-very-light-gray hero">
       <div className="row align-items-md-center">
-        <div className="col-12 order-md-1 col-md-6 overflow-hidden hero__images position-relative">
+        <div className="col-12 order-md-1 col-md-6 overflow-hidden hero__images d-flex d-md-block flex-column">
           <img
-            className="img-fluid hero__images__main position-absolute top-0 start-0 end-0"
+            className="img-fluid hero__images__main mx-auto"
             src={heroImg}
             alt="mobile payments"
           />
         </div>
         <div className="col-12 col-md-6">
-          <div className="container d-flex flex-column align-items-center align-items-md-start mb-5 text-center text-md-start hero__text">
+          <div className="container mx-auto d-flex flex-column align-items-center align-items-md-start mb-5 text-center text-md-start hero__text">
             <h1 className="text-dark eb-heading">
               Next generation digital banking
             </h1>

@@ -12339,11 +12339,39 @@ fieldset:disabled .btn {
 
 .hero__images {
   height: 350px;
+  background-image: url("../assets/bg-intro-mobile.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
+@media (min-width: 768px) {
+  .hero__images {
+    background-size: cover;
+    background-position: 15% 30px;
+    background-image: url("../assets/bg-intro-desktop.svg");
+  }
+}
+
+@media (min-width: 768px) {
+  .hero__images {
+    height: unset;
+    overflow: visible !important;
+  }
 }
 
 .hero__images__main {
+  max-height: 450px;
   -webkit-transform: translateY(-130px);
           transform: translateY(-130px);
+}
+
+@media (min-width: 768px) {
+  .hero__images__main {
+    max-height: unset;
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+  }
 }
 
 .hero__text {

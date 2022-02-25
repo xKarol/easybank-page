@@ -18,8 +18,26 @@
 .hero {
   &__images {
     height: 350px;
+    background-image: url("../assets/bg-intro-mobile.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    @include media-breakpoint-up(md) {
+      background-size: cover;
+      background-position: 15% 30px;
+      background-image: url("../assets/bg-intro-desktop.svg");
+    }
+    @include media-breakpoint-up(md) {
+      height: unset;
+      overflow: visible !important;
+    }
     &__main {
+      max-height: 450px;
       transform: translateY(-130px);
+      @include media-breakpoint-up(md) {
+        max-height: unset;
+        transform: translateY(100px);
+      }
     }
   }
   &__text {
