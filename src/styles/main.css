@@ -12364,9 +12364,20 @@ fieldset:disabled .btn {
   }
 }
 
+.latest-articles__text {
+  font-size: 16px;
+}
+
 @media (min-width: 768px) {
   .latest-articles__image {
     min-height: 300px;
+  }
+}
+
+@media (min-width: 992px) {
+  .latest-articles__image {
+    min-height: unset;
+    max-height: 175px;
   }
 }
 /*# sourceMappingURL=main.css.map */
