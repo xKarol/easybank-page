@@ -46,6 +46,16 @@
 }
 
 .header__navbar {
+  &__hamburger {
+    .navbar-toggler-icon {
+      background-image: url("../assets/icon-close.svg") !important;
+    }
+    &.collapsed {
+      .navbar-toggler-icon {
+        background-image: url("../assets/icon-hamburger.svg") !important;
+      }
+    }
+  }
   &.collapsing {
     transition: none;
     display: none;

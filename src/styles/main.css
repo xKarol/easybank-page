@@ -12378,6 +12378,14 @@ fieldset:disabled .btn {
   max-width: 400px;
 }
 
+.header__navbar__hamburger .navbar-toggler-icon {
+  background-image: url("../assets/icon-close.svg") !important;
+}
+
+.header__navbar__hamburger.collapsed .navbar-toggler-icon {
+  background-image: url("../assets/icon-hamburger.svg") !important;
+}
+
 .header__navbar.collapsing {
   -webkit-transition: none;
   transition: none;
