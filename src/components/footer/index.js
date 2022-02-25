@@ -3,6 +3,7 @@ import Logo from "../logo";
 import RequestInviteButton from "../request-invite-button";
 import Socials from "./socials";
 import NavbarItem from "./navbar-item";
+import Copyright from "./copyright";
 
 function Footer() {
   return (
@@ -27,9 +28,7 @@ function Footer() {
           </div>
           <div className="col-12 col-lg-4 d-flex flex-column align-items-center align-items-lg-end">
             <RequestInviteButton className="my-4" />
-            <span className="text-grayish-blue">
-              © Easybank. All Rights Reserved
-            </span>
+            <Copyright />
           </div>
         </div>
       </div>

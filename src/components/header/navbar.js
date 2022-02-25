@@ -1,3 +1,5 @@
+import NavItem from "./nav-item";
+
 function Navbar() {
   return (
     <nav
@@ -5,31 +7,11 @@ function Navbar() {
       id="navbarNav"
     >
       <ul className="navbar-nav py-3 header__navbar__list rounded-3">
-        <li className="nav-item">
-          <a className="nav-link" href="/">
-            Home
-          </a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link" href="/">
-            About
-          </a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link" href="/">
-            Contact
-          </a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link" href="/">
-            Blog
-          </a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link" href="/">
-            Careers
-          </a>
-        </li>
+        <NavItem href="/">Home</NavItem>
+        <NavItem href="/">About</NavItem>
+        <NavItem href="/">Contact</NavItem>
+        <NavItem href="/">Blog</NavItem>
+        <NavItem href="/">Careers</NavItem>
       </ul>
     </nav>
   );

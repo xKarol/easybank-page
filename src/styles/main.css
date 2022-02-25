@@ -12506,4 +12506,8 @@ fieldset:disabled .btn {
     max-height: 175px;
   }
 }
+
+.why-choose__text {
+  max-width: 550px;
+}
 /*# sourceMappingURL=main.css.map */
