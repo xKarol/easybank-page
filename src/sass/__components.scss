@@ -1,10 +1,18 @@
-.request-invite-button {
+@mixin primary-gradient {
   background: rgb(49, 211, 92);
   background: linear-gradient(
     90deg,
     rgba(49, 211, 92, 1) 10%,
     rgba(43, 183, 218, 1) 100%
   );
+}
+
+.request-invite-button {
+  @include primary-gradient;
+  transition: opacity 200ms ease-in-out;
+  &:hover {
+    opacity: 0.5;
+  }
 }
 
 .hero {
@@ -19,6 +27,28 @@
   }
 }
 
+.header__navbar {
+  > li {
+    position: relative;
+    &:hover {
+      &:before {
+        opacity: 1;
+      }
+    }
+    &:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -8px;
+      height: 3px;
+      @include primary-gradient;
+      opacity: 0;
+      transition: opacity 300ms ease-in-out;
+    }
+  }
+}
+
 .eb-heading {
   font-size: 40px;
 }
@@ -26,16 +56,32 @@
 .footer {
   &__link {
     color: $lightGrayishBlue;
+    transition: color 200ms ease-in-out;
+    &:hover {
+      color: $primary !important;
+    }
   }
   &__socials {
     @include media-breakpoint-up(md) {
       font-size: 30px !important;
     }
+    .bi {
+      transition: color 200ms ease-in-out;
+      &:hover {
+        color: $primary !important;
+      }
+    }
   }
 }
 
 .latest-articles {
+  &:hover {
+    .latest-articles__heading {
+      color: $primary !important;
+    }
+  }
   &__heading {
+    transition: color 200ms ease-in-out;
     @include media-breakpoint-up(md) {
       font-size: 20px !important;
     }

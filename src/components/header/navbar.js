@@ -1,11 +1,11 @@
 function Navbar() {
   return (
-    <div
+    <nav
       className="collapse navbar-collapse flex-grow-0 mx-auto"
       id="navbarNav"
     >
-      <ul className="navbar-nav">
-        <li className="nav-item active">
+      <ul className="navbar-nav header__navbar">
+        <li className="nav-item">
           <a className="nav-link" href="/">
             Home
           </a>
@@ -31,7 +31,7 @@ function Navbar() {
           </a>
         </li>
       </ul>
-    </div>
+    </nav>
   );
 }
 
