@@ -7,6 +7,26 @@
   );
 }
 
+@mixin container-right {
+  max-width: 100% !important;
+  margin-right: 0 !important;
+  @include media-breakpoint-up(sm) {
+    margin-left: calc(50vw - 278px) !important;
+  }
+  @include media-breakpoint-up(md) {
+    margin-left: calc(50vw - 369px) !important;
+  }
+  @include media-breakpoint-up(lg) {
+    margin-left: calc(50vw - 489px) !important;
+  }
+  @include media-breakpoint-up(xl) {
+    margin-left: calc(50vw - 578px) !important;
+  }
+  @include media-breakpoint-up(xxl) {
+    margin-left: calc(50vw - 670px) !important;
+  }
+}
+
 .request-invite-button {
   @include primary-gradient;
   transition: opacity 200ms ease-in-out;
@@ -42,6 +62,9 @@
   }
   &__text {
     max-width: 400px;
+    @include media-breakpoint-up(md) {
+      @include container-right;
+    }
   }
 }
 

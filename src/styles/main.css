@@ -12378,6 +12378,43 @@ fieldset:disabled .btn {
   max-width: 400px;
 }
 
+@media (min-width: 768px) {
+  .hero__text {
+    max-width: 100% !important;
+    margin-right: 0 !important;
+  }
+}
+
+@media (min-width: 768px) and (min-width: 576px) {
+  .hero__text {
+    margin-left: calc(50vw - 278px) !important;
+  }
+}
+
+@media (min-width: 768px) and (min-width: 768px) {
+  .hero__text {
+    margin-left: calc(50vw - 369px) !important;
+  }
+}
+
+@media (min-width: 768px) and (min-width: 992px) {
+  .hero__text {
+    margin-left: calc(50vw - 489px) !important;
+  }
+}
+
+@media (min-width: 768px) and (min-width: 1200px) {
+  .hero__text {
+    margin-left: calc(50vw - 578px) !important;
+  }
+}
+
+@media (min-width: 768px) and (min-width: 1400px) {
+  .hero__text {
+    margin-left: calc(50vw - 670px) !important;
+  }
+}
+
 .header__navbar__hamburger .navbar-toggler-icon {
   background-image: url("../assets/icon-close.svg") !important;
 }

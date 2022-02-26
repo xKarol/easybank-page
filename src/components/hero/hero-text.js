@@ -3,7 +3,7 @@ import RequestInviteButton from "../request-invite-button";
 function HeroText() {
   return (
     <div className="col-12 col-md-6">
-      <div className="container mx-auto d-flex flex-column align-items-center align-items-md-start mb-5 text-center text-md-start hero__text">
+      <div className="mx-auto d-flex flex-column align-items-center align-items-md-start mb-5 text-center text-md-start hero__text">
         <h1 className="text-dark eb-heading">
           Next generation digital banking
         </h1>
