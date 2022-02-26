@@ -12503,6 +12503,13 @@ fieldset:disabled .btn {
   }
 }
 
+@media (min-width: 992px) {
+  .footer__socials {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+}
+
 .footer__socials .bi {
   -webkit-transition: color 200ms ease-in-out;
   transition: color 200ms ease-in-out;

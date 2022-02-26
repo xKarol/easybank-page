@@ -9,8 +9,8 @@ function Footer() {
   return (
     <footer className="bg-dark text-white py-4">
       <div className="container">
-        <div className="row align-items-center">
-          <div className="col-12 col-lg-4 d-flex flex-column align-items-center align-items-lg-start">
+        <div className="row">
+          <div className="col-12 col-lg-4 d-flex flex-column align-items-center align-items-lg-start justify-content-lg-between">
             <Logo light />
             <Socials />
           </div>

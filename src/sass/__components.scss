@@ -151,6 +151,10 @@
     @include media-breakpoint-up(md) {
       font-size: 30px !important;
     }
+    @include media-breakpoint-up(lg) {
+      margin-top: 0 !important;
+      margin-bottom: 0 !important;
+    }
     .bi {
       transition: color 200ms ease-in-out;
       &:hover {
