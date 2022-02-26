@@ -8,7 +8,7 @@
 }
 
 @mixin container-right {
-  max-width: 100% !important;
+  max-width: 100%;
   margin-right: 0 !important;
   @include media-breakpoint-up(sm) {
     margin-left: calc(50vw - 278px) !important;
@@ -25,6 +25,10 @@
   @include media-breakpoint-up(xxl) {
     margin-left: calc(50vw - 670px) !important;
   }
+}
+
+body.no-scroll {
+  overflow: hidden;
 }
 
 .request-invite-button {
@@ -61,7 +65,7 @@
     }
   }
   &__text {
-    max-width: 400px;
+    max-width: 400px !important;
     @include media-breakpoint-up(md) {
       @include container-right;
     }

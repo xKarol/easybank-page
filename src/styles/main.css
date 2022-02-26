@@ -12325,6 +12325,10 @@ fieldset:disabled .btn {
   }
 }
 
+body.no-scroll {
+  overflow: hidden;
+}
+
 .request-invite-button {
   background: #31d35c;
   background: -webkit-gradient(linear, left top, right top, color-stop(10%, #31d35c), to(#2bb7da));
@@ -12375,12 +12379,12 @@ fieldset:disabled .btn {
 }
 
 .hero__text {
-  max-width: 400px;
+  max-width: 400px !important;
 }
 
 @media (min-width: 768px) {
   .hero__text {
-    max-width: 100% !important;
+    max-width: 100%;
     margin-right: 0 !important;
   }
 }
