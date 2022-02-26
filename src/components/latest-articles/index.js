@@ -1,4 +1,4 @@
-import MainText from "../why-choose/main-text";
+import MainText from "./main-text";
 import ArticlesList from "./articles-list";
 
 function LatestArticles() {
